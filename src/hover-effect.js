@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import TweenMax from 'gsap/TweenMax';
+import gsap from 'gsap';
 
 export default function (opts) {
 
@@ -237,8 +237,9 @@ void main() {
   scene.add(object);
 
   function transitionIn() {
-    TweenMax.to(mat.uniforms.dispFactor, speedIn, {
+    gsap.to(mat.uniforms.dispFactor, {
       value: 1,
+      duration: speedIn,
       ease: easing,
       onUpdate: render,
       onComplete: render,
@@ -246,8 +247,9 @@ void main() {
   }
 
   function transitionOut() {
-    TweenMax.to(mat.uniforms.dispFactor, speedOut, {
+    gsap.to(mat.uniforms.dispFactor, {
       value: 0,
+      duration: speedOut,
       ease: easing,
       onUpdate: render,
       onComplete: render,
