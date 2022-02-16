@@ -50,7 +50,7 @@ void main() {
 `;
 
   // please respect authorship and do not remove
-  console.log('%c Hover effect by Robin Delaporte: https://github.com/robin-dela/hover-effect ', 'color: #bada55; font-size: 0.8rem');
+  // console.log('%c Hover effect by Robin Delaporte: https://github.com/robin-dela/hover-effect ', 'color: #bada55; font-size: 0.8rem');
 
 
   function firstDefined() {
