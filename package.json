@@ -6,13 +6,13 @@
   "main": "dist/hover-effect.js",
   "umd:main": "dist/hover-effect.umd.js",
   "devDependencies": {
-    "microbundle": "^0.11.0",
+    "microbundle": "^0.14.2",
     "prettier": "^1.12.0",
     "uglify-es": "^3.3.9"
   },
   "scripts": {
     "build": "microbundle build --globals three=THREE,gsap=gsap",
-    "watch": "microbundle watch --globals three=THREE,gsap/gsap=gsap",
+    "watch": "microbundle watch --globals three=THREE,gsap=gsap",
     "publish": "npm publish --access public",
     "minify": "uglifyjs --mangle --compress -- js/hover.js > js/hover.min.js",
     "prettify": "prettier --trailing-comma=es5 --single-quote --print-width=120 --write ./js/hover.js"
